@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df1cdb6-be42-48ef-8b29-fdca8839bac0" name="Default Changelist" comment="Обновлен маршрут">
+    <list default="true" id="7df1cdb6-be42-48ef-8b29-fdca8839bac0" name="Default Changelist" comment="Обновлены данные бд">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602688756186</updated>
-      <workItem from="1602688757644" duration="38441000" />
+      <workItem from="1602688757644" duration="39912000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602749615152</created>
@@ -226,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602761345257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Обновлены данные бд">
+      <created>1602775033961</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602775033961</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +243,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="Подготовка к публикации" />
     <MESSAGE value="Обновлен маршрут" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновлен маршрут" />
+    <MESSAGE value="Обновлены данные бд" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновлены данные бд" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="194" key="#CLI_Interpreters" timestamp="1602700269117">
@@ -319,10 +327,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602754657645" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602761352097">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602775038757">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602761352097" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602775038757" />
     <state x="667" y="139" width="585" height="801" key="find.popup" timestamp="1602753245219">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
