@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df1cdb6-be42-48ef-8b29-fdca8839bac0" name="Default Changelist" comment="">
+    <list default="true" id="7df1cdb6-be42-48ef-8b29-fdca8839bac0" name="Default Changelist" comment="Подготовка к публикации">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/NewsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/NewsRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/NewsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/NewsFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +158,7 @@
       <recent name="C:\wamp64\www\API_news\database\seeders" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ExampleTest.testShowNews">
+  <component name="RunManager" selected="PHPUnit.ExampleTest">
     <configuration name="ExampleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" scope="Class" />
       <method v="2" />
@@ -178,6 +175,10 @@
       <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testDeleteNews" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="ExampleTest.testFindByName" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testFindByName" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="ExampleTest.testShowNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testShowNews" scope="Method" />
       <method v="2" />
@@ -188,8 +189,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.ExampleTest.testShowNews" />
         <item itemvalue="PHPUnit.ExampleTest" />
+        <item itemvalue="PHPUnit.ExampleTest.testFindByName" />
+        <item itemvalue="PHPUnit.ExampleTest.testShowNews" />
         <item itemvalue="PHPUnit.ExampleTest.testDeleteNews" />
         <item itemvalue="PHPUnit.ExampleTest.testAddDuplicateNews" />
       </list>
@@ -203,7 +205,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602688756186</updated>
-      <workItem from="1602688757644" duration="31519000" />
+      <workItem from="1602688757644" duration="34155000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602749615152</created>
@@ -212,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602749615152</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Подготовка к публикации">
+      <created>1602756613776</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602756613776</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +229,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Подготовка к публикации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подготовка к публикации" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="194" key="#CLI_Interpreters" timestamp="1602700269117">
@@ -255,6 +265,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="736" y="452" key="ComposerInitDialogKey/0.0.1920.1080@0.0.1920.1080" timestamp="1602754798647" />
+    <state x="184" y="90" key="DiffContextDialog" timestamp="1602756624536">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="184" y="90" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602756624536" />
     <state x="747" y="294" key="FileChooserDialogImpl" timestamp="1602754631232">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -263,22 +277,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="838" y="438" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602755385539" />
-    <state width="1875" height="265" key="GridCell.Tab.0.bottom" timestamp="1602755453476">
+    <state width="1875" height="265" key="GridCell.Tab.0.bottom" timestamp="1602760879928">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602755453476" />
-    <state width="1875" height="265" key="GridCell.Tab.0.center" timestamp="1602755453476">
+    <state width="1875" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602760879928" />
+    <state width="1875" height="265" key="GridCell.Tab.0.center" timestamp="1602760879928">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602755453476" />
-    <state width="1875" height="265" key="GridCell.Tab.0.left" timestamp="1602755453476">
+    <state width="1875" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602760879928" />
+    <state width="1875" height="265" key="GridCell.Tab.0.left" timestamp="1602760879928">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602755453476" />
-    <state width="1875" height="265" key="GridCell.Tab.0.right" timestamp="1602755453476">
+    <state width="1875" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602760879928" />
+    <state width="1875" height="265" key="GridCell.Tab.0.right" timestamp="1602760879928">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602755453476" />
+    <state width="1875" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602760879928" />
     <state width="1875" height="364" key="GridCell.Tab.1.bottom" timestamp="1602752362134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -299,6 +313,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602754657645" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602756625370">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602756625370" />
     <state x="667" y="139" width="585" height="801" key="find.popup" timestamp="1602753245219">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
