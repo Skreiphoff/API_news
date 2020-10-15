@@ -25,8 +25,8 @@ class NewsRequest extends FormRequest
     public function rules()
     {
         $rules = [
-            'id' => 'required|integer|unique:id',
-            'title' => 'required|string|unique:title,id',
+//            'id' => 'required|integer|unique:news',
+            'title' => 'required|string|unique:news',
             'preview' => 'string',
             'text' =>'string'
         ];
@@ -37,9 +37,9 @@ class NewsRequest extends FormRequest
                 return $rules;
             case 'PUT':
                 return [
-                    'id' => 'required|integer|exists:id,title'.$this->route('news'),
+                    'id' => 'required|integer|exists:news',
                     'title' => [
-                        'required', Rule::unique('title')->ignore($this->title, 'title')
+                        'required', Rule::unique('news')->ignore($this->id, 'id')
                     ]
                 ] + $rules;
             case 'DELETE':

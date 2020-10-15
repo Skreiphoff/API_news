@@ -20,4 +20,3 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::apiResource('/news', 'App\Http\Controllers\NewsController');
 Route::get('/news/find/{title}','App\Http\Controllers\NewsController@showByName')->name('news.showByName');
-Route::post('/news','App\Http\Controllers\NewsController@store')->name('news.add');

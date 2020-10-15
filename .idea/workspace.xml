@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df1cdb6-be42-48ef-8b29-fdca8839bac0" name="Default Changelist" comment="" />
+    <list default="true" id="7df1cdb6-be42-48ef-8b29-fdca8839bac0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/NewsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/NewsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/NewsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/NewsFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,9 +21,14 @@
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
-  <component name="PhpDebugGeneral" xdebug_show_addresses="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" xdebug_show_addresses="true" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
@@ -128,6 +142,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1isGC2QqMPdqCBHpCFUoAtJZyYM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -136,29 +151,35 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/phpdocumentor" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\API_news\database\seeders" />
+    </key>
+  </component>
   <component name="RunManager" selected="PHPUnit.ExampleTest.testShowNews">
-    <configuration name="ExampleTest.testAddNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="ExampleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleTest.testAddDuplicateNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testAddDuplicateNews" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleTest.testAddNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testAddNews" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleTest.testFabric" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testFabric" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ExampleTest.testFindByName" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testFindByName" scope="Method" />
+    <configuration name="ExampleTest.testDeleteNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testDeleteNews" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ExampleTest.testShowNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testShowNews" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ExampleTest.testUpdateNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testUpdateNews" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -168,10 +189,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.ExampleTest.testShowNews" />
-        <item itemvalue="PHPUnit.ExampleTest.testUpdateNews" />
-        <item itemvalue="PHPUnit.ExampleTest.testAddNews" />
-        <item itemvalue="PHPUnit.ExampleTest.testFabric" />
-        <item itemvalue="PHPUnit.ExampleTest.testFindByName" />
+        <item itemvalue="PHPUnit.ExampleTest" />
+        <item itemvalue="PHPUnit.ExampleTest.testDeleteNews" />
+        <item itemvalue="PHPUnit.ExampleTest.testAddDuplicateNews" />
       </list>
     </recent_temporary>
   </component>
@@ -183,12 +203,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602688756186</updated>
-      <workItem from="1602688757644" duration="24292000" />
+      <workItem from="1602688757644" duration="31519000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1602749615152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602749615152</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="194" key="#CLI_Interpreters" timestamp="1602700269117">
@@ -203,57 +235,88 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="674" y="182" key="#PHP/0.0.1920.1080@0.0.1920.1080" timestamp="1602700270674" />
+    <state x="739" y="245" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1602754522071">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="739" y="245" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602754522071" />
     <state x="677" y="252" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602699100324">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="677" y="252" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602699100324" />
+    <state x="728" y="370" key="#com.intellij.tools.ToolEditorDialog" timestamp="1602754656384">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="728" y="370" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602754656384" />
     <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602710310024">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602710310024" />
-    <state x="747" y="294" key="FileChooserDialogImpl" timestamp="1602747969250">
+    <state x="736" y="452" key="ComposerInitDialogKey" timestamp="1602754798647">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="747" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602747969250" />
-    <state width="1875" height="265" key="GridCell.Tab.0.bottom" timestamp="1602714005680">
+    <state x="736" y="452" key="ComposerInitDialogKey/0.0.1920.1080@0.0.1920.1080" timestamp="1602754798647" />
+    <state x="747" y="294" key="FileChooserDialogImpl" timestamp="1602754631232">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602714005680" />
-    <state width="1875" height="265" key="GridCell.Tab.0.center" timestamp="1602714005680">
+    <state x="747" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1602754631232" />
+    <state x="838" y="438" key="Github.ShareDialog" timestamp="1602755385539">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602714005680" />
-    <state width="1875" height="265" key="GridCell.Tab.0.left" timestamp="1602714005680">
+    <state x="838" y="438" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602755385539" />
+    <state width="1875" height="265" key="GridCell.Tab.0.bottom" timestamp="1602755453476">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602714005680" />
-    <state width="1875" height="265" key="GridCell.Tab.0.right" timestamp="1602714005680">
+    <state width="1875" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602755453476" />
+    <state width="1875" height="265" key="GridCell.Tab.0.center" timestamp="1602755453476">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602714005680" />
-    <state width="1875" height="364" key="GridCell.Tab.1.bottom" timestamp="1602713686550">
+    <state width="1875" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602755453476" />
+    <state width="1875" height="265" key="GridCell.Tab.0.left" timestamp="1602755453476">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="364" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602713686550" />
-    <state width="1875" height="364" key="GridCell.Tab.1.center" timestamp="1602713686550">
+    <state width="1875" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602755453476" />
+    <state width="1875" height="265" key="GridCell.Tab.0.right" timestamp="1602755453476">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="364" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602713686550" />
-    <state width="1875" height="364" key="GridCell.Tab.1.left" timestamp="1602713686550">
+    <state width="1875" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602755453476" />
+    <state width="1875" height="364" key="GridCell.Tab.1.bottom" timestamp="1602752362134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="364" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602713686550" />
-    <state width="1875" height="364" key="GridCell.Tab.1.right" timestamp="1602713686550">
+    <state width="1875" height="364" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602752362134" />
+    <state width="1875" height="364" key="GridCell.Tab.1.center" timestamp="1602752362134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="364" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602713686550" />
-    <state x="667" y="139" width="585" height="801" key="find.popup" timestamp="1602711272258">
+    <state width="1875" height="364" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602752362134" />
+    <state width="1875" height="364" key="GridCell.Tab.1.left" timestamp="1602752362134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="667" y="139" width="585" height="801" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602711272258" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602707341407">
+    <state width="1875" height="364" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602752362134" />
+    <state width="1875" height="364" key="GridCell.Tab.1.right" timestamp="1602752362134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602707341407" />
+    <state width="1875" height="364" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602752362134" />
+    <state x="461" y="185" key="SettingsEditor" timestamp="1602754657645">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602754657645" />
+    <state x="667" y="139" width="585" height="801" key="find.popup" timestamp="1602753245219">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="139" width="585" height="801" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602753245219" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602754195835">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602754195835" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connection.php</url>
+          <line>669</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -22,6 +22,7 @@ class NewsFactory extends Factory
     public function definition()
     {
         return [
+            'id' => null,
             'title' => $this->faker->unique()->paragraph(1),
             'preview' => $this->faker->unique()->paragraph(3),
             'text' => $this->faker->unique()->paragraph(5),

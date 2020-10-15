@@ -13,6 +13,7 @@ use Illuminate\Http\Response;
 class NewsController extends Controller
 {
     /**
+     * Вывод всех новостей на страницу
      * @return News[]|Collection
      */
     public function index()
@@ -21,33 +22,37 @@ class NewsController extends Controller
     }
 
     /**
+     * Создание новой новости
      * @param NewsRequest $request
      * @return mixed
      */
     public function store(NewsRequest $request)
     {
-        return News::create($request->all()->validated());
+        return News::create($request->all());
     }
 
     /**
+     * Показ новости по id
      * @param int $id
      * @return mixed
      */
     public function show(int $id)
     {
-        return News::findOrFail($id);
+        return json_encode(News::findOrFail($id), JSON_UNESCAPED_UNICODE);
     }
 
     /**
+     * Показ новости по названию
      * @param string $title
      * @return mixed
      */
     public function showByName(string $title)
     {
-        return News::all()->where('title', $title);
+        return json_encode(News::all()->where('title', $title),JSON_UNESCAPED_UNICODE);
     }
 
     /**
+     * Обновление новости
      * @param NewsRequest $request
      * @param $id
      * @return JsonResponse
@@ -61,6 +66,7 @@ class NewsController extends Controller
     }
 
     /**
+     * Удаление новости
      * @param int $id
      * @return Application|ResponseFactory|Response
      */
