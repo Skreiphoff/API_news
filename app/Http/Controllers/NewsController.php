@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\NewsRequest;
 use App\Models\News;
+use DB;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Database\Eloquent\Collection;
@@ -38,7 +39,7 @@ class NewsController extends Controller
      */
     public function show(int $id)
     {
-        return json_encode(News::findOrFail($id), JSON_UNESCAPED_UNICODE);
+        return News::findOrFail($id);
     }
 
     /**
@@ -48,7 +49,9 @@ class NewsController extends Controller
      */
     public function showByName(string $title)
     {
-        return json_encode(News::all()->where('title', $title),JSON_UNESCAPED_UNICODE);
+        return DB::table('news')
+            ->where('title', 'like', '%'.$title.'%')
+            ->get();
     }
 
     /**

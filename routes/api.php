@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,5 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('/news', 'App\Http\Controllers\NewsController');
+Route::apiResource('/news', NewsController::class);
+
 Route::get('/news/find/{title}','App\Http\Controllers\NewsController@showByName')->name('news.showByName');
