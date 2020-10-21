@@ -27,19 +27,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df1cdb6-be42-48ef-8b29-fdca8839bac0" name="Default Changelist" comment="обновлена миграция">
+    <list default="true" id="7df1cdb6-be42-48ef-8b29-fdca8839bac0" name="Default Changelist" comment="обновлен фаил миграции, пофикшен поиск по имени.">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/API_news.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/API_news.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_14_152621_create_news_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_152621_create_news_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,10 +210,6 @@
       <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleTest.testAddDuplicateNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testAddDuplicateNews" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="ExampleTest.testAddNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testAddNews" scope="Method" />
       <method v="2" />
@@ -237,17 +226,21 @@
       <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testShowNews" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="ExampleTest.testUpdateNews" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testUpdateNews" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ExampleTest" />
         <item itemvalue="PHPUnit.ExampleTest.testShowNews" />
+        <item itemvalue="PHPUnit.ExampleTest.testUpdateNews" />
         <item itemvalue="PHPUnit.ExampleTest.testFindByName" />
         <item itemvalue="PHPUnit.ExampleTest.testDeleteNews" />
-        <item itemvalue="PHPUnit.ExampleTest.testAddDuplicateNews" />
-        <item itemvalue="PHPUnit.ExampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +258,7 @@
       <workItem from="1603228219406" duration="2402000" />
       <workItem from="1603238260590" duration="52000" />
       <workItem from="1603238334267" duration="2496000" />
-      <workItem from="1603288373672" duration="1065000" />
+      <workItem from="1603288373672" duration="1912000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602749615152</created>
@@ -316,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602783213794</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="обновлен фаил миграции, пофикшен поиск по имени.">
+      <created>1603289673600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603289673600</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +342,8 @@
     <MESSAGE value="Удалена фабрика юзеров" />
     <MESSAGE value="Добавлен Факер" />
     <MESSAGE value="Обновлен .env" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновлен .env" />
+    <MESSAGE value="обновлен фаил миграции, пофикшен поиск по имени." />
+    <option name="LAST_COMMIT_MESSAGE" value="обновлен фаил миграции, пофикшен поиск по имени." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="194" key="#CLI_Interpreters" timestamp="1602700269117">
@@ -393,22 +394,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="838" y="438" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602755385539" />
-    <state width="1875" height="265" key="GridCell.Tab.0.bottom" timestamp="1603212491831">
+    <state width="1875" height="265" key="GridCell.Tab.0.bottom" timestamp="1603290285950">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603212491831" />
-    <state width="1875" height="265" key="GridCell.Tab.0.center" timestamp="1603212491831">
+    <state width="1875" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603290285950" />
+    <state width="1875" height="265" key="GridCell.Tab.0.center" timestamp="1603290285950">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603212491831" />
-    <state width="1875" height="265" key="GridCell.Tab.0.left" timestamp="1603212491831">
+    <state width="1875" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603290285950" />
+    <state width="1875" height="265" key="GridCell.Tab.0.left" timestamp="1603290285950">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603212491831" />
-    <state width="1875" height="265" key="GridCell.Tab.0.right" timestamp="1603212491831">
+    <state width="1875" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603290285950" />
+    <state width="1875" height="265" key="GridCell.Tab.0.right" timestamp="1603290285950">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1875" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603212491831" />
+    <state width="1875" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603290285950" />
     <state width="1875" height="364" key="GridCell.Tab.1.bottom" timestamp="1602801750180">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -429,10 +430,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="784" y="263" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1603240663159" />
-    <state x="788" y="242" key="RollbackChangesDialog" timestamp="1603240795680">
+    <state x="788" y="242" key="RollbackChangesDialog" timestamp="1603289595098">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="788" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1603240795680" />
+    <state x="788" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1603289595098" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1603239299246">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -441,6 +442,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602783291029" />
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603290326461">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1603290326461" />
     <state x="814" y="274" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1602780404729">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
